@@ -1,4 +1,13 @@
-const repeatString = function() {
+const repeatString = function(str,num) {        
+    var fullString='';
+    if(num<0){
+        return 'ERROR'
+    }
+    while(num){
+        fullString+=str;
+        num--;
+    }
+    return fullString;
 
 };
 
